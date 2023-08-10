@@ -81,9 +81,7 @@ class AndroidSettingsTile extends StatelessWidget {
                       children: [
                         DefaultTextStyle(
                           style: TextStyle(
-                            color: enabled
-                                ? theme.themeData.settingsTileTextColor
-                                : theme.themeData.inactiveTitleColor,
+                            color: Colors.white,
                             fontSize: 18,
                             fontWeight: FontWeight.w400,
                           ),
