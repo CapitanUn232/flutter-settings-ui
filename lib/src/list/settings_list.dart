@@ -59,7 +59,6 @@ class SettingsList extends StatelessWidget {
     ).merge(theme: brightness == Brightness.dark ? darkTheme : lightTheme);
 
     return Container(
-      color:  themeData.settingsListBackground,
       width: MediaQuery.of(context).size.width,
       alignment: Alignment.center,
       child: ListView.builder(
