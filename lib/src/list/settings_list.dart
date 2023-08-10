@@ -61,7 +61,10 @@ class SettingsList extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       alignment: Alignment.center,
-      child: ListView.builder(
+      child: SettingsTheme(
+        themeData: themeData,
+        platform: platform,
+        child: ListView.builder(
           physics: physics,
           shrinkWrap: shrinkWrap,
           itemCount: sections.length,
@@ -69,6 +72,7 @@ class SettingsList extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return sections[index];
           },
+         ),
         ),
     );
   }
