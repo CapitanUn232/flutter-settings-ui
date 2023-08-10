@@ -59,6 +59,7 @@ class SettingsList extends StatelessWidget {
     ).merge(theme: brightness == Brightness.dark ? darkTheme : lightTheme);
 
     return Container(
+      color: HexColor("#0e0e0e"),
       width: MediaQuery.of(context).size.width,
       alignment: Alignment.center,
       child: SettingsTheme(
